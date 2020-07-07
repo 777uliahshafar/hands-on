@@ -112,17 +112,75 @@ html {
   box-sizing: border-box;
 }
 
+/* ----------Body -----------*/
 body {
-  background-color: blue;
+  font-family: "Lato", sans-serif;
+  background-color: wheat;
+  font-weight: 300;
 }
 
-h1 {
-  color: #fff;
+/* -----------Header --------------*/
+header {
+  background-color: #424e64;
+  color: #bbc2ca;
+  padding: 1rem 2%;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+header h2 {
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+/* -----------Nav --------------*/
+nav {
+  background-color: #bbc2ca;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  padding: .5rem 0;
+  color: #424e64;
+  text-decoration: none;
+  -webkit-transition: background .5s ease, color .5s ease;
+  transition: background .5s ease, color .5s ease;
+}
+
+nav ul li.active a {
+  background-color: #9ea8b4;
+}
+
+nav ul li a:hover {
+  color: #bbc2ca;
+  background-color: #424e64;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media only screen and (min-width: 560px) {
   body {
-    background-color: green;
+    background-color: blue;
   }
 }
 
