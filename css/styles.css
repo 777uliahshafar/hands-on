@@ -171,6 +171,55 @@ nav ul li a:hover {
   background-color: #424e64;
 }
 
+/* -----------Footer --------------*/
+footer {
+  width: 100%;
+  background-color: #424e64;
+}
+
+footer p {
+  text-align: center;
+  color: #bbc2ca;
+  font-size: 0.75rem 0;
+  padding: 0.5rem;
+}
+
+footer p a {
+  color: #bbc2ca;
+}
+
+/* -----------Main --------------*/
+main figure.banner {
+  width: 100%;
+}
+
+main figure.banner img {
+  width: 100%;
+}
+
+main h1 {
+  color: #424e64;
+  margin: 1px 0 2% 2%;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+main hr.fadeAway {
+  background: -webkit-gradient(linear, left top, right top, from(#424e64), to(rgba(66, 78, 100, 0)));
+  background: linear-gradient(to right, #424e64 0%, rgba(66, 78, 100, 0) 100%);
+  margin: 0 2% 0 2%;
+  border: none;
+  height: 2px;
+}
+
+main figure.photo {
+  width: 100%;
+}
+
+main figure.photo img {
+  width: 100%;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";

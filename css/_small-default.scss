@@ -61,12 +61,50 @@ nav{
         background-color: $primaryColor;
     } //end of hover
 
-    
-    
-    
     } // end of nav
 
+/* -----------Footer --------------*/
+footer{
+    width: 100%;
+    background-color: $primaryColor;
 
+    p {
+        text-align: center;
+        color: $secondaryColor;
+        font-size: 0.75rem 0;
+        padding: 0.5rem;
+    }
+
+    p a{ 
+        color: $secondaryColor;
+    }
+}
+
+/* -----------Main --------------*/
+main{ 
+    figure.banner{width: 100%;}
+    figure.banner img{width: 100%;}
+
+    h1{
+        color: $primaryColor;
+        margin: 1px 0 $gutter $gutter;
+        font-size: 2rem; 
+        font-weight: 800;
+    }// end h1
+
+    hr.fadeAway {
+        background: linear-gradient(to right, rgba(66,78,100,1) 0%,rgba(66,78,100,0) 100%);
+        margin: 0 $gutter 0 $gutter;
+        border: none;
+        height: 2px; 
+
+    } // end of hr
+
+    figure.photo{width: 100%;}
+    figure.photo img{width: 100%;} 
+    
+     
+}// end of main
 
 
 
