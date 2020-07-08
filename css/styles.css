@@ -115,7 +115,6 @@ html {
 /* ----------Body -----------*/
 body {
   font-family: "Lato", sans-serif;
-  background-color: wheat;
   font-weight: 300;
 }
 
@@ -204,6 +203,25 @@ main h1 {
   font-weight: 800;
 }
 
+main h2 {
+  color: #424e64;
+  margin: 1px 2%;
+  font-size: 1.5rem;
+  color: #566683;
+}
+
+main h3 {
+  color: #424e64;
+  margin: 1px 2%;
+  font-size: 1.2rem;
+  color: #6d7f9f;
+}
+
+main p {
+  color: #35373a;
+  line-height: 130%;
+}
+
 main hr.fadeAway {
   background: -webkit-gradient(linear, left top, right top, from(#424e64), to(rgba(66, 78, 100, 0)));
   background: linear-gradient(to right, #424e64 0%, rgba(66, 78, 100, 0) 100%);
@@ -213,11 +231,22 @@ main hr.fadeAway {
 }
 
 main figure.photo {
-  width: 100%;
+  width: 96%;
+  margin: 0.5rem 2%;
 }
 
 main figure.photo img {
   width: 100%;
+}
+
+main figure.photo figcaption {
+  text-align: center;
+  color: #424e64;
+}
+
+main div.blog article {
+  margin: 0.5rem 2%;
+  width: 96%;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -228,14 +257,60 @@ main figure.photo img {
 }
 
 @media only screen and (min-width: 560px) {
-  body {
-    background-color: blue;
+  /* -----------Main --------------*/
+  main figure.photo {
+    width: 46%;
+    float: left;
+  }
+  main div.blog article {
+    width: 46%;
+    float: left;
+  }
+  main div.blog article:nth-child(2n+1) {
+    clear: left;
   }
 }
 
 @media only screen and (min-width: 1140px) {
+  /* -----------Body  --------------*/
   body {
-    background-color: red;
+    background-image: url(/images/polonez_car.png);
+  }
+  div#wrapper {
+    width: 80rem;
+    margin: 2rem auto;
+    -webkit-box-shadow: 0 0 10px #000000;
+            box-shadow: 0 0 10px #000000;
+    background-color: #fff;
+  }
+  /* -----------Nav --------------*/
+  nav ul {
+    margin-left: 2%;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li a {
+    padding: .5rem 1rem;
+  }
+  /* -----------Main --------------*/
+  main figure.photo {
+    width: 29.33%;
+    float: left;
+  }
+  main div.blog article {
+    width: 21%;
+    float: left;
+  }
+  main div.blog article:nth-child(2n+1) {
+    clear: none;
+  }
+  main div.blog article:nth-child(3n+1) {
+    clear: left;
   }
 }
 /*# sourceMappingURL=styles.css.map */

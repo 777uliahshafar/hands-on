@@ -7,7 +7,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /* ----------Body -----------*/
 body{
     font-family: $defaultFont;
-    background-color: wheat;
     font-weight: $normalWeight;
 }
 
@@ -92,17 +91,42 @@ main{
         font-weight: 800;
     }// end h1
 
+    h2{
+        color: $primaryColor;
+        margin: 1px $gutter;
+        font-size: 1.5rem; 
+        color: lighten($primaryColor, 10%);
+    }// end h2
+
+    h3{
+        color: $primaryColor;
+        margin: 1px $gutter;
+        font-size: 1.2rem; 
+        color: lighten($primaryColor, 20%);
+    }// end h3
+
+    p{
+        color: $fontColor;
+        line-height: 130%;
+    }
+
     hr.fadeAway {
         background: linear-gradient(to right, rgba(66,78,100,1) 0%,rgba(66,78,100,0) 100%);
         margin: 0 $gutter 0 $gutter;
         border: none;
-        height: 2px; 
-
+        height: 2px;     
     } // end of hr
 
-    figure.photo{width: 100%;}
+    figure.photo{width: 100%-$gutterdbl; margin: 0.5rem $gutter; }
     figure.photo img{width: 100%;} 
-    
+    figure.photo figcaption{text-align: center; color: $primaryColor;}
+
+    div.blog article {
+        margin: .5rem $gutter;
+        width: 100%- $gutterdbl;
+    }
+
+
      
 }// end of main
 
